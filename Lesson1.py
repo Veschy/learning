@@ -131,24 +131,65 @@
 
 #  Словари  и  множества
 
-geo_logs = [
-    {'visit1': ['Москва', 'Россия']},
-    {'visit2': ['Дели', 'Индия']},
-    {'visit3': ['Владимир', 'Россия']},
-    {'visit4': ['Лиссабон', 'Португалия']},
-    {'visit5': ['Париж', 'Франция']},
-    {'visit6': ['Лиссабон', 'Португалия']},
-    {'visit7': ['Тула', 'Россия']},
-    {'visit8': ['Тула', 'Россия']},
-    {'visit9': ['Курск', 'Россия']},
-    {'visit10': ['Архангельск', 'Россия']}
-]
-rus_visits = []
-for visit in geo_logs:
-    # print(visit)
-    for key , place in visit.items():
-        if place[1]=='Россия':
-            rus_visits.append(visit)
-print(rus_visits[0].keys())
+# geo_logs = [
+#     {'visit1': ['Москва', 'Россия']},
+#     {'visit2': ['Дели', 'Индия']},
+#     {'visit3': ['Владимир', 'Россия']},
+#     {'visit4': ['Лиссабон', 'Португалия']},
+#     {'visit5': ['Париж', 'Франция']},
+#     {'visit6': ['Лиссабон', 'Португалия']},
+#     {'visit7': ['Тула', 'Россия']},
+#     {'visit8': ['Тула', 'Россия']},
+#     {'visit9': ['Курск', 'Россия']},
+#     {'visit10': ['Архангельск', 'Россия']}
+# ]
+# rus_visits = []
+# for visit in geo_logs:
+#     # print(visit)
+#     for key , place in visit.items():
+#         if place[1]=='Россия':
+#             rus_visits.append(visit)
+# print(rus_visits[0].keys())
+#
+# задание 2. set ( множества )
+#
+# ids = {'user1': [213, 213, 213, 15, 213],
+#        'user2': [54, 54, 119, 119, 119],
+#        'user3': [213, 98, 98, 35]}
+# result = []
+# for user in ids:
+#     result += ids[user]
+# print(set(result))
+#
+#  задание 3
+
+# queries = [
+#     'смотреть сериалы онлайн',
+#     'новости спорта',
+#     'афиша кино',
+#     'курс доллара',
+#     'сериалы этим летом',
+#     'курс по питону',
+#     'сериалы про спорт'
+#     ]
+# dissip = []
+# for query in queries:
+#     number = len(query.split())
+#     dissip.append(number)
+# print(f'Из двух слов - {round(dissip.count(2)/len(dissip)*100)}%')
+# print(f'Из трех слов - {round(dissip.count(3)/len(dissip)*100)}%')
+
+#  задание 4
+
+# stats = {'facebook': 55, 'yandex': 120, 'vk': 115, 'google': 99, 'email': 42, 'ok': 98}
+# channel_score = [0]
+# name_channel = [0]
+# for  channel in stats:
+#     if stats[channel] > channel_score[0]:
+#         channel_score[0] = stats[channel]
+#         name_channel[0] = channel
+#
+# print(name_channel[0])
+
 
 
